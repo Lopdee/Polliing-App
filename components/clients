@@ -1,0 +1,19 @@
+// components/PollForm.tsx
+"use client"
+
+import { useState } from "react"
+
+export default function PollForm() {
+  const [title, setTitle] = useState("")
+
+  return (
+    <form>
+      <input
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="Enter poll title"
+      />
+    </form>
+  )
+}
+

@@ -18,6 +18,6 @@ It allows users to create polls, vote on options, and view results in real time.
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/YOUR-USERNAME/Polliing-App.git
+git clone https://github.com/Lopdee/Polliing-App.git
 cd Polliing-App
 

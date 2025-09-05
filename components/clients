@@ -1,19 +1,68 @@
-// components/PollForm.tsx
+/**
+ * User Dashboard Component
+ * 
+ * Displays a list of polls created by the authenticated user.
+ * Provides navigation for creating new polls or managing existing ones.
+ * 
+ * Why: Gives users a central view of their activity within the app.
+ */
+
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { supabase } from "@/lib/supabaseClient"
 
-export default function PollForm() {
-  const [title, setTitle] = useState("")
+export default function Dashboard() {
+  const [polls, setPolls] = useState<any[]>([])
+
+  useEffect(() => {
+    async function fetchPolls() {
+      // Fetch polls created by the current user
+      const { data, error } = await supabase.from("polls").select("*")
+      if (!error) setPolls(data || [])
+    }
+    fetchPolls()
+  }, [])
 
   return (
-    <form>
-      <input
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        placeholder="Enter poll title"
-      />
-    </form>
+    <div className="p-4">
+      <h2 className="text-xl font-bold">My Polls</h2>
+      {polls.length === 0 ? (
+        <p>No polls yet. Create one!</p>
+      ) : (
+        <ul>
+          {polls.map((poll) => (
+            <li key={poll.id} className="py-2 border-b">
+              {poll.title}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   )
 }
+
+B
+B
+A
+A
+A
+A
+A
+B
+B
+B
+B
+B
+B
+B
+B
+B
+B
+A
+A
+A
+A
+A
+A
 

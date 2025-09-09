@@ -1,6 +1,6 @@
 # 🗳️ ALX Polly – Polling App
 
-ALX Polly is a modern polling and voting application built with **Next.js 13+, Supabase, and TailwindCSS**.  
+ALX Polly is a modern polling and voting application built with **Next.js 13+, Supabase, and 111111111
 It allows users to create polls, vote on options, and view results in real time.
 
 ---

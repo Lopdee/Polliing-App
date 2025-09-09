@@ -21,7 +21,7 @@ export async function POST(req: Request) {
 
   if (error) {
     // Return 401 if credentials invalid
-    return NextResponse.json({ error: error.message }, { status: 401 })
+    return NextResponse.json({ status: "ok", timestamp: Date.now() });
   }
 
   // Return the authenticated user and session

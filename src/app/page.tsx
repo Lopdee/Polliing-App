@@ -1,3 +1,10 @@
+B
+B
+B
+B
+A
+A
+B
 export default function HomePage() {
   return (
     <div>

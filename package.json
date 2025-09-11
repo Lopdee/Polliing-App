@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+"scripts": {
+  "start": "node index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
+>>>>>>> 02c7bdf305ff9b12c4e5491bf38c90a197f26883
 {
   "name": "new-polling-app",
   "version": "0.1.0",

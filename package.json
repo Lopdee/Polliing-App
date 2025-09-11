@@ -1,4 +1,7 @@
-
+"scripts": {
+  "start": "node index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
 {
   "name": "new-polling-app",
   "version": "0.1.0",

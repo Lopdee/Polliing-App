@@ -1,7 +1,17 @@
+<<<<<<< HEAD
+B
+B
+B
+B
+A
+A
+B
+=======
 
 
 import Link from "next/link"
 
+>>>>>>> 02c7bdf305ff9b12c4e5491bf38c90a197f26883
 export default function HomePage() {
   return (
     <div className="text-center">
